@@ -13,15 +13,148 @@ const inter = Inter({
 // Custom Font: Grandis Extended
 const grandisExtended = localFont({
   src: [
+    // Thin - 100
+    {
+      path: "../public/fonts/GrandisExtended-Thin.woff2",
+      weight: "100",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-Thin.woff",
+      weight: "100",
+      style: "normal",
+    },
+
+    // Thin Italic - 100 italic
+    {
+      path: "../public/fonts/GrandisExtended-ThinItalic.woff2",
+      weight: "100",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-ThinItalic.woff",
+      weight: "100",
+      style: "italic",
+    },
+
+    // Light - 300
+    {
+      path: "../public/fonts/GrandisExtended-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-Light.woff",
+      weight: "300",
+      style: "normal",
+    },
+
+    // Light Italic - 300 italic
+    {
+      path: "../public/fonts/GrandisExtended-LightItalic.woff2",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-LightItalic.woff",
+      weight: "300",
+      style: "italic",
+    },
+
+    // Regular - 400
+    {
+      path: "../public/fonts/GrandisExtended-Regular.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-Regular.woff",
+      weight: "400",
+      style: "normal",
+    },
+
+    // Regular Italic - 400 italic
+    {
+      path: "../public/fonts/GrandisExtended-RegularItalic.woff2",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-RegularItalic.woff",
+      weight: "400",
+      style: "italic",
+    },
+
+    // Medium - 500
+    {
+      path: "../public/fonts/GrandisExtended-Medium.woff2",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-Medium.woff",
+      weight: "500",
+      style: "normal",
+    },
+
+    // Medium Italic - 500 italic
+    {
+      path: "../public/fonts/GrandisExtended-MediumItalic.woff2",
+      weight: "500",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-MediumItalic.woff",
+      weight: "500",
+      style: "italic",
+    },
+
+    // Bold - 700
+    {
+      path: "../public/fonts/GrandisExtended-Bold.woff2",
+      weight: "700",
+      style: "normal",
+    },
     {
       path: "../public/fonts/GrandisExtended-Bold.woff",
       weight: "700",
       style: "normal",
     },
+
+    // Bold Italic - 700 italic
     {
-      path: "../public/fonts/GrandisExtended-Bold.woff2",
+      path: "../public/fonts/GrandisExtended-BoldItalic.woff2",
       weight: "700",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-BoldItalic.woff",
+      weight: "700",
+      style: "italic",
+    },
+
+    // Black - 900
+    {
+      path: "../public/fonts/GrandisExtended-Black.woff2",
+      weight: "900",
       style: "normal",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-Black.woff",
+      weight: "900",
+      style: "normal",
+    },
+
+    // Black Italic - 900 italic
+    {
+      path: "../public/fonts/GrandisExtended-BlackItalic.woff2",
+      weight: "900",
+      style: "italic",
+    },
+    {
+      path: "../public/fonts/GrandisExtended-BlackItalic.woff",
+      weight: "900",
+      style: "italic",
     },
   ],
   variable: "--font-grandis",
