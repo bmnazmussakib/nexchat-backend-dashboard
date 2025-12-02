@@ -24,14 +24,14 @@ function DashboardItemCard({ data }: Props) {
     return (
         <>
             <div className="card card-border bg-white border-0 rounded-3xl">
-                <div className="card-body p-6">
+                <div className="card-body md:p-6 p-5">
                     <div className="icon">
                         <Icon {...data?.iconProps} className="w-14 h-14" />
                     </div>
                     <h2 className="card-title capitalize md:text-xl text-lg font-medium font-grandis text-neutral-800 ">{data?.title}</h2>
                 </div>
-                <div className="card-footer p-6">
-                    <h1 className="card-title capitalize md:text-4xl text-3xl font-bold font-grandis text-neutral-800 ">{data?.count}</h1>
+                <div className="card-footer md:p-6 p-5">
+                    <h1 className="card-title capitalize md:text-4xl text-2xl font-bold font-grandis text-neutral-800 ">{data?.count}</h1>
 
                 </div>
             </div>
