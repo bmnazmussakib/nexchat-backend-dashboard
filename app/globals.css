@@ -103,7 +103,7 @@
 
 
   .section-padding {
-    @apply py-16 lg:py-20;
+    @apply py-6 lg:py-8;
   }
 
   .title-text-h1 {
