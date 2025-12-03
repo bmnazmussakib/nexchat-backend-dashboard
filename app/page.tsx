@@ -9,12 +9,12 @@ export default function Home() {
       <DashboardCardItems />
 
       <div className="grid md:grid-cols-2 gap-4 section-padding">
-        <div className="card bg-base-100 shadow-sm rounded-3xl">
-          <div className="card-header w-full flex justify-between items-center p-6">
+        <div className="card bg-white shadow-sm rounded-3xl overflow-hidden">
+          <div className="card-header w-full flex justify-between items-center p-6 bg-white">
             <h4 className="font-grandis font-medium lg:text-xl md:text-lg text-base">Daily Messages</h4>
             <div className="flex items-center font-grandis md:text-base text-sm ">
-              <span className="block w-14 font-normal ">Sort by</span>
-              <select defaultValue="Pick a font" className="select select-ghost font-medium w-22 outline-0 font-grandis  ">
+              <span className="block w-16 font-normal ">Sort by</span>
+              <select defaultValue="Pick a font" className="select select-ghost font-medium w-24 outline-0 font-grandis  ">
                 <option className="">Daily</option>
                 <option className="">Weekly</option>
                 <option className="">Monhly</option>
@@ -28,15 +28,13 @@ export default function Home() {
               className="w-full object-cover"
               />
           </figure>
-          {/* <div className="card-body">
-          </div> */}
         </div>
-        <div className="card bg-base-100 shadow-sm rounded-3xl">
-          <div className="card-header w-full flex justify-between items-center p-6">
+        <div className="card bg-white shadow-sm rounded-3xl overflow-hidden">
+          <div className="card-header w-full flex justify-between items-center p-6 bg-white">
             <h4 className="font-grandis font-medium lg:text-xl md:text-lg text-base">Daily Messages</h4>
             <div className="flex items-center font-grandis md:text-base text-sm ">
-              <span className="block w-14 font-normal">Sort by</span>
-              <select defaultValue="Pick a font" className="select select-ghost font-medium w-22 outline-0 font-grandis ">
+              <span className="block w-16 font-normal">Sort by</span>
+              <select defaultValue="Pick a font" className="select select-ghost font-medium w-24 outline-0 font-grandis ">
                 <option className="">Daily</option>
                 <option className="">Weekly</option>
                 <option className="">Monhly</option>
@@ -50,8 +48,6 @@ export default function Home() {
               className="w-full object-cover"
               />
           </figure>
-          {/* <div className="card-body">
-          </div> */}
         </div>
       </div>
 
