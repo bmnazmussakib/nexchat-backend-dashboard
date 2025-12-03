@@ -1,5 +1,6 @@
 import React from 'react'
 import { highlightTextWithGradient } from './ui/highlightTextWithGradient'
+import Link from 'next/link'
 
 type Props = {}
 
@@ -17,7 +18,7 @@ function DashboardHero({}: Props) {
                   <p className="font-grandis md:text-lg text-sm">We recommend starting with our
                     <span className="bg-gradient-to-r from-[#f55823] to-[#ff9f00] bg-clip-text text-transparent relative before:absolute before:w-full before:h-[1px] before:left-0 before:-bottom-0.5 before:transition-all before:duration-200 before:bg-[linear-gradient(90deg,#f55823_0%,#ff9f00_100%)]"> onboarding</span> for a step-by-step guide on how to create your first AI Agent.</p>
                   <div className="card-actions justify-start mt-7">
-                    <button className="btn bg-white border-white shadow-none rounded-full capitalize text-black font-grandis md:text-lg text-sm font-medium md:h-12 px-6">open onboarding</button>
+                    <Link href={'/onboarding'} className="btn bg-white border-white shadow-none rounded-full capitalize text-black font-grandis md:text-lg text-sm font-medium md:h-12 px-6">open onboarding</Link>
                   </div>
                 </div>
               </div>

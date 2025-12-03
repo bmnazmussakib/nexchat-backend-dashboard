@@ -11,26 +11,50 @@ export default function Home() {
       <div className="grid md:grid-cols-2 gap-4 section-padding">
         <div className="card bg-base-100 shadow-sm rounded-3xl">
           <div className="card-header w-full flex justify-between items-center p-6">
-            <h4 className="font-grandis font-medium md:text-xl text-lg">Daily Messages</h4>
-            <div className="flex items-center font-grandis text-sm ">
-              <span className="block w-35 font-normal">Sort by</span>
-              <select defaultValue="Pick a font" className="select select-ghost font-medium">
-                <option>Daily</option>
-                <option>Weekly</option>
-                <option>Monhly</option>
+            <h4 className="font-grandis font-medium lg:text-xl md:text-lg text-base">Daily Messages</h4>
+            <div className="flex items-center font-grandis md:text-base text-sm ">
+              <span className="block w-14 font-normal ">Sort by</span>
+              <select defaultValue="Pick a font" className="select select-ghost font-medium w-22 outline-0 font-grandis  ">
+                <option className="">Daily</option>
+                <option className="">Weekly</option>
+                <option className="">Monhly</option>
               </select>
             </div>
           </div>
           <figure>
             <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+              src="/assets/images/chart-card-4.png"
+              alt="Shoes"
+              className="w-full object-cover"
+              />
           </figure>
-          <div className="card-body">
-
+          {/* <div className="card-body">
+          </div> */}
+        </div>
+        <div className="card bg-base-100 shadow-sm rounded-3xl">
+          <div className="card-header w-full flex justify-between items-center p-6">
+            <h4 className="font-grandis font-medium lg:text-xl md:text-lg text-base">Daily Messages</h4>
+            <div className="flex items-center font-grandis md:text-base text-sm ">
+              <span className="block w-14 font-normal">Sort by</span>
+              <select defaultValue="Pick a font" className="select select-ghost font-medium w-22 outline-0 font-grandis ">
+                <option className="">Daily</option>
+                <option className="">Weekly</option>
+                <option className="">Monhly</option>
+              </select>
+            </div>
           </div>
+          <figure>
+            <img
+              src="/assets/images/chart-card-1.png"
+              alt="Shoes"
+              className="w-full object-cover"
+              />
+          </figure>
+          {/* <div className="card-body">
+          </div> */}
         </div>
       </div>
+
     </>
   );
 }
