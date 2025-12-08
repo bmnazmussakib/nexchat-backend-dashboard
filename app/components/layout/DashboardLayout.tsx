@@ -81,7 +81,7 @@ function DashboardLayout({ children }: Props) {
                         </div>
                     </nav>
                     {/* Page content here */}
-                    <div className="p-10">{children}</div>
+                    <div className="lg:p-10 md:p-8 p-4">{children}</div>
                 </div>
 
                 <div className="drawer-side is-drawer-close:overflow-visible border-r border-stone-200">
@@ -147,6 +147,8 @@ function DashboardLayout({ children }: Props) {
                     </div>
                 </div>
             </div>
+
+            
         </>
     )
 }
