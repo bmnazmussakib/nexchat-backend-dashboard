@@ -1,0 +1,42 @@
+// app/page.tsx
+'use client';
+
+import { useState } from 'react';
+import DashboardCardItems from "./components/DashboardCardItems";
+import DashboardHero from "./components/DashboardHero";
+import { SortOption } from '@/utils/types';
+import { chartCardConfigs } from '@/utils/data';
+import ChartCard from './components/ui/ChartCard';
+// import ChartCard from "./components/ChartCard";
+// import { chartCardConfigs } from './data';
+// import { SortOption } from './types';
+
+export default function Home() {
+  const [sortStates, setSortStates] = useState<Record<string, SortOption>>(
+    Object.fromEntries(
+      chartCardConfigs.map(config => [config.id, config.defaultSort])
+    )
+  );
+
+  const handleSortChange = (cardId: string, value: SortOption) => {
+    setSortStates(prev => ({ ...prev, [cardId]: value }));
+  };
+
+  return (
+    <>
+      <DashboardHero />
+      <DashboardCardItems />
+
+      <div className="grid md:grid-cols-2 gap-4 section-padding">
+        {chartCardConfigs.map((config) => (
+          <ChartCard
+            key={config.id}
+            config={config}
+            sortBy={sortStates[config.id]}
+            onSortChange={handleSortChange}
+          />
+        ))}
+      </div>
+    </>
+  );
+}

@@ -62,3 +62,20 @@ export const DEFAULT_CONFIG: AgentConfig = {
     'Oops! An error has occurred. If the issue persists, feel free to reach out to our support team for assistance. We\'re here to help!',
 };
 
+
+// types.ts
+export type SortOption = 'daily' | 'weekly' | 'monthly';
+
+export type ChartData = {
+  categories: string[];
+  values: number[];
+};
+
+export type ChartCardConfig = {
+  id: string;
+  title: string;
+  defaultSort: SortOption;
+  isInteractive: boolean;
+  staticImageSrc?: string; // Required only for non-interactive cards
+};
+
