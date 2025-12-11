@@ -1,14 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import DashboardLayout from "./components/layout/DashboardLayout";
-
-// Use Inter from Google Fonts
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-});
 
 // Custom Font: Grandis Extended
 const grandisExtended = localFont({
@@ -174,7 +167,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${grandisExtended.variable} antialiased`}
+        className={`${grandisExtended.variable} antialiased`}
       >
         <DashboardLayout>
           {children}

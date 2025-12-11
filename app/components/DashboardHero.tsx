@@ -53,11 +53,11 @@ function DashboardHero({ }: Props) {
           <div className="card-actions justify-start mt-7">
             <button
               className="btn bg-white border-white shadow-none rounded-full capitalize text-black font-grandis md:text-lg text-sm font-medium md:h-12 px-6"
-              onClick={() => {
-                resetModal()
-                const modal = document.getElementById('my_modal_3') as HTMLDialogElement
-                modal?.showModal()
-              }}
+              // onClick={() => {
+              //   resetModal()
+              //   const modal = document.getElementById('my_modal_3') as HTMLDialogElement
+              //   modal?.showModal()
+              // }}
             >
               open onboarding
             </button>
