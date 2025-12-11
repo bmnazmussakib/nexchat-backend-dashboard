@@ -72,7 +72,7 @@ const MessagesChartCard: React.FC<MessagesChartCardProps> = () => {
           <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as 'daily' | 'weekly' | 'monthly')}
-            className="select select-ghost font-medium w-24 outline-0 font-grandis"
+            className="select select-ghost font-medium w-24 outline-0 font-grandis bg-white text-neutral-700"
           >
             <option value="daily">Daily</option>
             <option value="weekly">Weekly</option>

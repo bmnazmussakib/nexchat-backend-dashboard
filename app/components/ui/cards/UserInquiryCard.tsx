@@ -11,7 +11,7 @@ const UserInquiryCard: React.FC = () => {
           <span className="block w-16 font-normal">Sort by</span>
           <select
             defaultValue="Daily"
-            className="select select-ghost font-medium w-24 outline-0 font-grandis"
+            className="select select-ghost font-medium w-24 outline-0 font-grandis bg-white text-neutral-700"
           >
             <option>Daily</option>
             <option>Weekly</option>
