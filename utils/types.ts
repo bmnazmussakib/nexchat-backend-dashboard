@@ -1,7 +1,8 @@
 import { ComponentType, ReactNode, SVGProps } from "react";
 
 export interface SidebarLogo {
-  img: string;
+  fullLogo: string;
+  shortLogo: string;
   text: string;
 }
 

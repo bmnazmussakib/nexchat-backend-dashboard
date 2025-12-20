@@ -30,7 +30,7 @@ const MessagesChartCard: React.FC<MessagesChartCardProps> = () => {
   const options = {
     chart: {
       id: 'spline-area',
-      toolbar: { show: true },
+      toolbar: { show: false },
     },
     colors: ['#F87017'],
     stroke: {

@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { sidebarData } from '../../../utils/sidebarData'
 import { usePathname } from "next/navigation";
 import { IoIosMenu } from 'react-icons/io';
@@ -14,6 +14,9 @@ function DashboardLayout({ children }: Props) {
 
     const pathname = usePathname();
 
+    const [sidebarOpen, setSidebarOpen] = useState(false)
+    console.log({ sidebarOpen })
+
     return (
         <>
             <div className="drawer lg:drawer-open">
@@ -21,7 +24,7 @@ function DashboardLayout({ children }: Props) {
                 <div className="drawer-content">
                     {/* Navbar */}
                     <nav className="navbar w-full h-20 bg-stone-50 px-5 border-b border-stone-200">
-                        <label htmlFor="my-drawer-4" aria-label="open sidebar" className="text-3xl mr-3">
+                        <label htmlFor="my-drawer-4" aria-label="open sidebar" className="text-3xl mr-3" onClick={() => setSidebarOpen((prev) => !prev)}>
                             {/* Sidebar toggle icon */}
                             {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" strokeLinejoin="round" strokeLinecap="round" strokeWidth="2" fill="none" stroke="currentColor" className="my-1.5 inline-block size-4"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M9 4v16"></path><path d="M14 10l2 2l-2 2"></path></svg> */}
                             <IoIosMenu />
@@ -87,11 +90,19 @@ function DashboardLayout({ children }: Props) {
                 <div className="drawer-side is-drawer-close:overflow-visible border-r border-stone-200">
                     <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
                     <div className="flex min-h-full flex-col items-start bg-stone-50 is-drawer-close:w-14 is-drawer-open:w-64">
-                        <div className='px-5 h-20 border-b border-stone-200 w-full flex items-center gap-2'>
-                            <div className="text-[#343C6A]">
-                                <img src={sidebarData.logo.img} alt="" />
-                            </div>
-                        </div>
+                        {
+                            sidebarOpen ?
+                                <div className='px-5 h-20 border-b border-stone-200 w-full flex items-center gap-2'>
+                                    <div className="text-[#343C6A]">
+                                        <img src={sidebarData.logo.fullLogo} alt="" />
+                                    </div>
+                                </div> :
+                                <div className='px-3 h-20 border-b border-stone-200 w-full flex items-center gap-2'>
+                                    <div className="text-[#343C6A]">
+                                        <img src={sidebarData.logo.shortLogo} alt="" />
+                                    </div>
+                                </div>
+                        }
                         {/* Sidebar content here */}
                         <ul className="menu w-full grow overflow-y-auto relative px-0">
                             {sidebarData.sections.map((section, index) => {
@@ -148,7 +159,7 @@ function DashboardLayout({ children }: Props) {
                 </div>
             </div>
 
-            
+
         </>
     )
 }

@@ -2,7 +2,8 @@ import { SidebarData } from "./types";
 
 export const sidebarData: SidebarData = {
   logo: {
-    img: '/assets/images/logo.png',
+    fullLogo: '/assets/images/logo.png',
+    shortLogo: '/assets/images/nexchat-logo.svg',
     text: "NextChat",
   },
   sections: [
