@@ -38,9 +38,12 @@ const Message: React.FC<MessageProps> = ({ message }) => {
             <div
                 className={`px-4 lg:py-3 py-2 lg:text-base md:text-sm text-xs lg:rounded-2xl rounded-xl max-w-sm md:max-w-md break-words ${isUser
                     ? 'bg-gray-200 text-gray-800 lg:rounded-br-none rounded-br-none'
-                    : 'bg-white text-gray-800 shadow-sm lg:rounded-bl-none rounded-bl-none border border-gray-100'
+                    : 'bg-[#F4F4F5] text-gray-800 shadow-sm lg:rounded-bl-none rounded-bl-none border border-gray-100'
                     }`}
             >
+                {
+                    !isUser && <h5 className='font-bold text-black text-base mb-3'>NexChat AI Agent</h5>
+                }
                 {message.text}
             </div>
         </div>
